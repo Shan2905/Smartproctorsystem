@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles for code highlighting */
+.code-editor {
+  font-family: 'Fira Code', 'Monaco', 'Cascadia Code', 'Roboto Mono', monospace;
+}
+
+.cpp-keyword {
+  color: #569cd6;
+  font-weight: bold;
+}
+
+.cpp-string {
+  color: #ce9178;
+}
+
+.cpp-comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.cpp-number {
+  color: #b5cea8;
+}
+
+.cpp-function {
+  color: #dcdcaa;
+}
+
+.cpp-type {
+  color: #4ec9b0;
+}
+
+.violation-alert {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
